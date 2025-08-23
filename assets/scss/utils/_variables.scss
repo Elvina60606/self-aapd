@@ -297,12 +297,129 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+// AAPD scss-docs-start theme-color-vｚariable
+$primary-base: #FCF2E1; //多加入的背景色號
+$primary-100: #FEF9E8;
+$primary-200: #FCF1C3;
+$primary-300: #FBE5A0;
+$primary-400: #F9DC80;
+$primary-500: #F8D46E;
+$primary-600: #F7CC67;
+$primary-700: #F5C062;
+$primary-800: #F3AF5C;
+$primary-900: #F1A058;
+$primary-1000: #EA8850;
+$primary: $primary-900;
+
+$accent-50: #EFF4FE;  //多加入的背景色號
+$accent-100: #DCE7FD;
+$accent-200: #C1D6FC;
+$accent-300: #96BDFA;
+$accent-400: #5790F4;
+$accent-500: #4174F0;
+$accent-600: #2C55E4;
+$accent-700: #2342D2;
+$accent-800: #2338AA;
+$accent-900: #223486;
+$accent-950: #192152;
+$accent: $accent-400;
+
+$neutral-50: #F9FAFB;
+$neutral-100: #F2F4F7;
+$neutral-200: #E4E7EC;
+$neutral-300: #D0D5DD;
+$neutral-400: #98A2B3;
+$neutral-500: #667085;
+$neutral-600: #475467;
+$neutral-700: #344054;
+$neutral-800: #1D2939;
+$neutral-900: #101828;
+$neutral-950: #121212;
+
+$error-50: #FEF2F2;
+$error-400: #F87171;
+$error-600: #DC2626;
+$error-800: #991B1B;
+
+$success-50: #F0FDF4;
+$success-400: #4ADE80;
+$success-600: #16A34A;
+$success-800: #166534;
+$success: $success-400;
+
+$warning-50: #FEFCE8;
+$warning-400: #FDE047;
+$warning-600: #CA8A04;
+$warning-800: #854D0E;
+$warning: $warning-400;
+// AAPD scss-docs-end theme-color-variables
+
+// AAPD scss-docs-start theme-colors-map
+$theme-colors: (
+    "primary-base": $primary-base,
+    "primary-100": $primary-100,
+    "primary-200": $primary-200,
+    "primary-300": $primary-300,
+    "primary-400": $primary-400,
+    "primary-500": $primary-500,
+    "primary-600": $primary-600,
+    "primary-700": $primary-700,
+    "primary-800": $primary-800,
+    "primary-900": $primary-900,
+    "primary-1000": $primary-1000,
+    "primary": $primary,
+
+    "accent-50": $accent-50,
+    "accent-100": $accent-100,
+    "accent-200": $accent-200,
+    "accent-300": $accent-300,
+    "accent-400": $accent-400,
+    "accent-500": $accent-500,
+    "accent-600": $accent-600,
+    "accent-700": $accent-700,
+    "accent-800": $accent-800,
+    "accent-900": $accent-900,
+    "accent-950": $accent-950,
+    "accent": $accent,
+
+    "neutral-50": $neutral-50,
+    "neutral-100":  $neutral-100,
+    "neutral-200":  $neutral-200,
+    "neutral-300":  $neutral-300,
+    "neutral-400":  $neutral-400,
+    "neutral-500":  $neutral-500,
+    "neutral-600":  $neutral-600,
+    "neutral-700":  $neutral-700,
+    "neutral-800":  $neutral-800,
+    "neutral-900":  $neutral-900,
+    "neutral-950":  $neutral-950,
+
+    "error-50": $error-50,
+    "error-400":  $error-400,
+    "error-600":  $error-600,
+    "error-800":  $error-800,
+
+    "success-50": $success-50,
+    "success-400":  $success-400,
+    "success-600":  $success-600,
+    "success-800":  $success-800,
+    "success": $success,
+
+    "warning-50": $warning-50,
+    "warning-400":  $warning-400,
+    "warning-600":  $warning-600,
+    "warning-800":  $warning-800,
+    "warning": $warning,
+) ;
+// AAPD scss-docs-end theme-colors-map
+
+
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+//$primary:       $blue !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
+//$success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+//$warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -310,11 +427,11 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  //"primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
+  //"success":    $success,
   "info":       $info,
-  "warning":    $warning,
+  //"warning":    $warning,
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark
@@ -406,16 +523,34 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// scss-docs-start spacer-variables-maps
+// AAPD scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-) !default;
+  1: $spacer * .125, //2
+  2: $spacer * .25,  //4
+  3: $spacer * .5,   //8
+  4: $spacer * .75,  //12
+  5: $spacer,
+  6: $spacer * 1.5,  //24
+  7: $spacer * 2,    //32
+  8: $spacer * 2.5,  //40
+  9: $spacer * 3,    //48
+  10: $spacer * 3.5, //56
+  11: $spacer * 4,   //64
+) ;
+// AAPD scss-docs-end spacer-variables-maps
+
+// scss-docs-start spacer-variables-maps
+//$spacer: 1rem !default;
+//$spacers: (
+//  0: 0,
+//  1: $spacer * .25,
+//  2: $spacer * .5,
+//  3: $spacer,
+//  4: $spacer * 1.5,
+//  5: $spacer * 3,
+//) !default;
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -603,7 +738,10 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// AAPD Font-family
+$font-family-sans-serif:     "Noto Sans TC", "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+//$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -626,34 +764,58 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
+//AAPD ling-height
+$line-height-base:            1.6;
+
+//$line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+//AAPD headings-font-size
+$h3-font-size:                $font-size-base * 1.5;          //24
+$h4-font-size:                $font-size-base * 1.25;         //20
+$h5-font-size:                $font-size-base * 1.125;        //18
+
+$h1-font-size:                $font-size-base * 2.5 !default; //40
+$h2-font-size:                $font-size-base * 2 !default;   //32
+//$h3-font-size:                $font-size-base * 1.75 !default;
+//$h4-font-size:                $font-size-base * 1.5 !default;
+//$h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
+//AAPD font-size
 $font-sizes: (
   1: $h1-font-size,
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
-) !default;
+  6: $h6-font-size,
+  7: 14px,
+  8: 12px,
+) ;
+
+
+//$font-sizes: (
+//  1: $h1-font-size,
+//  2: $h2-font-size,
+//  3: $h3-font-size,
+//  4: $h4-font-size,
+//  5: $h5-font-size,
+//  6: $h6-font-size
+//) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
+//AAPD headings-font-weight
+$headings-font-weight:        700;
+
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+//$headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables

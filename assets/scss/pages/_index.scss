@@ -1,3 +1,46 @@
-.index-title {
-  font-size: 100px;
+*{
+  outline: 1px dashed #00f;
+}
+
+.wrap{
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.circle-container {
+  position: relative;
+  max-width: 100%;
+  height: 616px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 616px;
+  height: 616px;
+}
+
+.circle1 {
+  top: 22.889%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle2 {
+  top: 19.967%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle3 {
+  top: 17.857%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle4{
+  top: 16.883%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
