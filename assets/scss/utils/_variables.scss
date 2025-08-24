@@ -532,12 +532,13 @@ $spacers: (
   3: $spacer * .5,   //8
   4: $spacer * .75,  //12
   5: $spacer,
-  6: $spacer * 1.5,  //24
-  7: $spacer * 2,    //32
-  8: $spacer * 2.5,  //40
-  9: $spacer * 3,    //48
-  10: $spacer * 3.5, //56
-  11: $spacer * 4,   //64
+  6: $spacer * 1.25,  //20
+  7: $spacer * 1.5,  //24
+  8: $spacer * 2,    //32
+  9: $spacer * 2.5,  //40
+  10: $spacer * 3,    //48
+  11: $spacer * 3.5, //56
+  12: $spacer * 4,   //64
 ) ;
 // AAPD scss-docs-end spacer-variables-maps
 
@@ -585,7 +586,7 @@ $body-emphasis-color:       $black !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:        $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -606,8 +607,9 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 // Paragraphs
 //
 // Style p element.
-
-$paragraph-margin-bottom:   1rem !default;
+//AAPD p
+$paragraph-margin-bottom:   0;
+//$paragraph-margin-bottom:   1rem !default;
 
 
 // Grid breakpoints
