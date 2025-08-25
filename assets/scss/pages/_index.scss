@@ -1,5 +1,5 @@
 .wrap{
-  max-width: 500px;
+  max-width: 768px;
   margin: 0 auto;
   height: 100vh;
 }
@@ -7,36 +7,36 @@
 .circle-container {
   position: relative;
   max-width: 100%;
-  height: 616px;
+  height: 947px;
 }
 
 .circle {
   position: absolute;
   border-radius: 50%;
-  width: 616px;
-  height: 616px;
+  width: 947px;
+  height: 947px;
 }
 
 .circle1 {
-  top: 22.889%; 
+  top: calc(22.889% - 142px); 
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .circle2 {
-  top: 19.967%; 
+  top:  calc(19.967% - 142px); 
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .circle3 {
-  top: 17.857%; 
+  top: calc(17.857% - 142px); 
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .circle4{
-  top: 16.883%;
+  top: calc(16.883% - 142px);
   left: 50%;
   transform: translate(-50%, -50%);
 }
