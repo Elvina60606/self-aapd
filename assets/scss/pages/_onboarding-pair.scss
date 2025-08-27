@@ -1,0 +1,46 @@
+.circle-pulse-container{
+    position: relative;
+    width: 100%;
+    height: 576px;
+}
+
+.circle-pulse{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    animation: pulse 5s infinite ease-in-out;
+}
+
+.circle-pulse1{    
+    width: 574px;
+    height: 574px;
+}
+.circle-pulse2{
+    width: 498px;
+    height: 498px;
+    animation: pulse 5s infinite ease-in-out;
+    --extra-scale: 1.2;
+}
+.circle-pulse3{
+    width: 374px;
+    height: 374px;
+}
+.circle-pulse4{
+    width: 308px;
+    height: 308px;
+}
+
+@keyframes pulse{
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+
+}
