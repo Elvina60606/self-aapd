@@ -42,6 +42,7 @@
                 </button>
                 <input type="text" 
                        class="form-control border-0 fw-bold text-center" 
+                       id="nickName"
                        placeholder="暱稱" 
                        aria-label="" aria-describedby="nick-name">
                 <span class="input-group-text border-0 rounded-end-4 bg-white" style="width: 60px;"></span>
@@ -131,6 +132,32 @@
         </footer>
       </main>
     </div>
+
+
+
+
+
+    <script>
+    const input = document.getElementById('nickName');
+    const placeholders = ["暱稱", "Wendy"];
+    let i = 0;
+
+    input.placeholder = placeholders[i];
+
+    const interval = setInterval(() => {
+      i++;
+      if (i >= placeholders.length) {
+        clearInterval(interval);
+        return;
+      }
+      input.placeholder = "";
+      setTimeout(() => {
+        input.placeholder = placeholders[i];
+      }, 500); 
+
+    }, 2000); //
+    </script>
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>
