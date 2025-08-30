@@ -1,7 +1,3 @@
-*{
-    outline: 1px dashed #a7f;
-}
-
 .progress-fill{
     height: 100%;
     width: 0%;
@@ -14,20 +10,28 @@
   to { width: 100%; }
 }
 
-.n1{top:-10%;left:60%;}
-
-.move-x{
-    animation: moveX 1s ease-in-out infinite alternate;
+.number{
+    position: absolute;
+    font-weight: bold;
+    z-index: -1;
 }
-.move-y{
-    animation: moveY 1s ease-in-out infinite alternate;
-}
-
-@keyframes moveX{
-    0%{transform: translateX(-10px);}
-    100%{transform: translateX(10px);}
-}
-@keyframes moveY{
-    0%{transform: translateY(-10px);}
-    100%{transform: translateY(10px);}
-}
+.n1{top:-20%;left:50%;
+    font-size: 32px;}
+.n2{top:-15%;left:-3%;
+    font-size: 48px;}
+.n3{top:4%;left:63%;
+    font-size: 20px;}
+.n4{top:9%;left:20%;
+    font-size: 36px;}
+.n5{top:37%;left:61%;
+    font-size: 48px;}
+.n6{top:51%;left:3%;
+    font-size: 64px;}
+.n7{top:92%;left:50%;
+    font-size: 40px;}
+.n8{top:100%;left:80%;
+    font-size: 48px;}
+.n9{top:115%;left:-4%;
+    font-size: 64px;}
+.n10{top:140%;left:55%;
+    font-size: 48px;}
