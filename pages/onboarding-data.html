@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>測量結果頁面</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg-primary-base d-flex flex-column">
+      <%- include('./layout/header'); -%>
+        <div class="py-3 ps-6 mb-4">
+          <a href="onboarding-pair.html">
+            <button class="btn border-0 p-0">
+              <img class="border rounded-circle bg-white arrow-prev-btn" 
+                   src="../assets/images/onboarding區/arrow-prev.svg" 
+                   alt="arrow-prev">
+            </button>
+          </a>
+        </div>
+
+        <main class="data-container pt-4 pb-99">
+          <h3 class="text-center mb-8">您的測量結果</h3>
+          <div class="data-row flex-wrap gap-4">
+            <div class="data-col-6 bg-white rounded-12">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="fw-medium">體重</p>
+                  <span class="fw-medium data-high-orange fs-8">
+                    <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                    偏高
+                  </span>
+              </div>
+              <p class="h2">57.4<span class="fs-7 fw-medium align-bottom ms-3">Kg</span></p>   
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="fw-medium">BMI</p>
+                  <span class="fw-medium data-high-orange fs-8">
+                    <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                    偏高
+                  </span>
+              </div>
+              <p class="h2">32<span class="fs-7 fw-medium align-bottom ms-3">%</span></p>   
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="fw-medium">體脂肪率</p>
+                  <span class="fw-medium data-high-orange fs-8">
+                    <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                    偏高
+                  </span>
+              </div>
+              <p class="h2">32<span class="fs-7 fw-medium align-bottom ms-3">%</span></p>   
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="fw-medium">內臟脂肪</p>
+                  <span class="fw-medium data-high-orange fs-8">
+                    <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                    偏高
+                  </span>
+              </div>
+              <p class="h2">6</p>   
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="fw-medium">基礎代謝</p>
+                  <span class="fw-medium data-normal-green fs-8">
+                    <i class="ph ph-smiley fs-3 align-bottom"></i>
+                    標準
+                  </span>
+              </div>
+              <p class="h2">1285<span class="fs-7 fw-medium align-bottom ms-3">Kcal</span></p>   
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <p class="fw-medium mb-2">身體年齡</p>
+              <p class="h2">35</p>   
+            </div>
+
+            
+          </div>
+
+
+
+
+        </main>
+        
+
+        <footer class="px-4 pt-4 pb-7 mt-auto bg-primary-base w-100">
+            <a href="onboarding-pair.html">
+              <button type="button" class="footer-btn rounded-pill w-100 py-4 animate__animated animate__fadeIn animate__delay-2s">
+              <span class="h3">繼續</span>
+              </button>
+            </a>
+        </footer>
+      </div>
+    </div>
+
+
+
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

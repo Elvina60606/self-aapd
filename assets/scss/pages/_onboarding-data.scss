@@ -1,0 +1,32 @@
+*{
+    outline: 1px dashed #99f;
+}
+.pb-99{
+    padding-bottom: 99px;
+}
+.data-high-orange{
+    color: #F85F18;
+}
+.data-normal-green{
+    color: #009F99;
+}
+.rounded-12{
+    border-radius: 12px;
+}
+
+.data-container{
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.data-row{
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.data-col-6{
+    width: calc(50% - 6px);
+    padding: 8px 12px;
+}
