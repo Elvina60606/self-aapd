@@ -4,7 +4,6 @@
     background: $primary-1000;
     animation: fillBar 3s ease-in-out forwards;
 }
-
 @keyframes fillBar {
   from { width: 0%; }
   to { width: 100%; }
@@ -15,23 +14,50 @@
     font-weight: bold;
     z-index: -1;
 }
-.n1{top:-20%;left:50%;
-    font-size: 32px;}
-.n2{top:-15%;left:-3%;
-    font-size: 48px;}
-.n3{top:4%;left:63%;
-    font-size: 20px;}
-.n4{top:9%;left:20%;
-    font-size: 36px;}
-.n5{top:37%;left:61%;
-    font-size: 48px;}
-.n6{top:51%;left:3%;
-    font-size: 64px;}
-.n7{top:92%;left:50%;
-    font-size: 40px;}
-.n8{top:100%;left:80%;
-    font-size: 48px;}
-.n9{top:115%;left:-4%;
-    font-size: 64px;}
-.n10{top:140%;left:55%;
-    font-size: 48px;}
+.n1{top:-20%; left:50%; font-size: 32px;
+    animation: float1 5s ease-in-out infinite;}
+.n2{top:-15%;left:-3%;  font-size: 48px;
+    animation: float2 5s ease-in-out infinite;}
+.n3{top:4%;left:63%;    font-size: 20px;
+    animation: float3 3s ease-in-out infinite;}
+.n4{top:9%;left:20%;    font-size: 36px;
+    animation: float4 5s ease-in-out infinite;}
+.n5{top:37%;left:61%;   font-size: 48px;
+    animation: float5 3s ease-in-out infinite;}
+.n6{top:51%;left:3%;    font-size: 64px;
+    animation: float6 3s ease-in-out infinite;}
+.n7{top:92%;left:50%;   font-size: 40px;
+    animation: float7 3s ease-in-out infinite;}
+.n8{top:100%;left:80%;  font-size: 48px;
+    animation: float8 3s ease-in-out infinite;}
+.n9{top:115%;left:-4%;  font-size: 64px;
+    animation: float9 3s ease-in-out infinite;}
+.n10{top:140%;left:55%; font-size: 48px;
+    animation: float10 3s ease-in-out infinite;}
+
+.delay{
+    animation-delay: 3s;
+}
+@keyframes float1{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(100px, 40px); }
+  60%  { transform: translate(-10px, 50px); }
+}
+@keyframes float2{
+  0%, 100%   { transform: translate(0, 0); }
+  50%  { transform: translate(20px, -40px); }
+}
+@keyframes float3{
+  0%, 100%   { transform: translate(0, 0); }
+  50%  { transform: translate(10px, -30px); }
+}
+@keyframes float4{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(20px, 20px); }
+  60%  { transform: translate(-50px, 60px); }
+}
+@keyframes float5{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(40px, 0); }
+  60%  { transform: translate(40px, -30px); }
+}
