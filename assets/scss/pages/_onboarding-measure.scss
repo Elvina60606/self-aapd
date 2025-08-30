@@ -25,18 +25,18 @@
 .n5{top:37%;left:61%;   font-size: 48px;
     animation: float5 3s ease-in-out infinite;}
 .n6{top:51%;left:3%;    font-size: 64px;
-    animation: float6 3s ease-in-out infinite;}
+    animation: float6 5s ease-in-out infinite;}
 .n7{top:92%;left:50%;   font-size: 40px;
     animation: float7 3s ease-in-out infinite;}
 .n8{top:100%;left:80%;  font-size: 48px;
-    animation: float8 3s ease-in-out infinite;}
+    animation: float8 5s ease-in-out infinite;}
 .n9{top:115%;left:-4%;  font-size: 64px;
     animation: float9 3s ease-in-out infinite;}
 .n10{top:140%;left:55%; font-size: 48px;
-    animation: float10 3s ease-in-out infinite;}
+    animation: float10 5s ease-in-out infinite;}
 
 .delay{
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 @keyframes float1{
   0%, 100%   { transform: translate(0, 0); }
@@ -60,4 +60,28 @@
   0%, 100%   { transform: translate(0, 0); }
   30%  { transform: translate(40px, 0); }
   60%  { transform: translate(40px, -30px); }
+}
+@keyframes float6{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(80px, 0); }
+  60%  { transform: translate(100px, 20px); }
+}
+@keyframes float7{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(-10px, 30px); }
+  60%  { transform: translate(-90px, 10px); }
+}
+@keyframes float8{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(-10px, -60px); }
+  60%  { transform: translate(-30px, -70px); }
+}
+@keyframes float9{
+  0%, 100%   { transform: translate(0, 0); }
+  30%  { transform: translate(0, -50px); }
+  60%  { transform: translate(30px, 10px); }
+}
+@keyframes float10{
+  0%, 100%   { transform: translate(0, 0); }
+  50%  { transform: translate(40px, -40px); }
 }
