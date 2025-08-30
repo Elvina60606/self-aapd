@@ -8,18 +8,26 @@
     
   </head>
   <body>
-    <div class="wrap">
-      <div class="bg-primary-base d-flex flex-column" style="min-height: 100vh">
+    <div class="wrap" >
+      <div class="bg-primary-base d-flex flex-column" 
+          style="min-height: 100vh">
       <%- include('./layout/header'); -%>
       
-      <div class="px-5 mt-10 mb-13 text-center">
+        <div class="px-5 mt-10 mb-13 text-center">
         <h3 class="mb-8">測量中</h3>
-        <div class="bg-white border-white rounded-pill progress-fill"
-             style="height: 23px;"></div>
+        <div class="bg-white border-white rounded-pill"
+             style="height: 23px;">
+            <div class="progress-fill rounded-pill"></div>
+        </div>
+        </div>
 
-      </div>
+        <div class="position-relative d-flex justify-content-center">
+          <img src="../assets/images/onboarding區/coach_measure.svg"   
+               alt="coach_measure" style="width: 154.67px; height: 232px">
+  
+          <div class="position-absolute h2 text-white n1 move-x">30</div>
 
-
+        </div>
       
 
 

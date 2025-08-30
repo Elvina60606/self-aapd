@@ -1,0 +1,33 @@
+*{
+    outline: 1px dashed #a7f;
+}
+
+.progress-fill{
+    height: 100%;
+    width: 0%;
+    background: $primary-1000;
+    animation: fillBar 3s ease-in-out forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.n1{top:-10%;left:60%;}
+
+.move-x{
+    animation: moveX 1s ease-in-out infinite alternate;
+}
+.move-y{
+    animation: moveY 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveX{
+    0%{transform: translateX(-10px);}
+    100%{transform: translateX(10px);}
+}
+@keyframes moveY{
+    0%{transform: translateY(-10px);}
+    100%{transform: translateY(10px);}
+}
