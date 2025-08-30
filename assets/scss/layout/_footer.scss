@@ -1,0 +1,24 @@
+.rounded-top-6 {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.bottom-nav-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-link {
+    .nav-icon-active {
+    display: none;
+    }
+}
+
+.nav-link.active {
+    .nav-icon-regular {
+    display: none;
+    }
+
+    .nav-icon-active {
+    display: block;
+    }
+}
