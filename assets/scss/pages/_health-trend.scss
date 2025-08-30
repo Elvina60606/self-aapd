@@ -1,0 +1,46 @@
+.header-primary {
+    background-color: var(--bs-primary-base);
+}
+
+.filter-nav {
+    .nav-pills {
+        .nav-link {
+            background: transparent;
+            color: var(--bs-neutral-700);
+            border: none;
+            
+            &.active {
+            background-color: var(--bs-neutral-950);
+            color: white;
+            }
+        }
+    }
+}
+
+.ph-smiley-sad {
+        color: #F85F18;
+}
+
+.ph-smiley {
+        color: #009F99;
+}
+
+.color-danger {
+    color: #F85F18;
+}
+
+.color-success {
+    color: #009F99;
+}
+
+.bg-accent-400-20 {
+    background-color: #96BDFA33;
+}
+
+.ph-megaphone {
+    transform: scaleX(-1);
+}
+
+.bottom-safe {
+    padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
