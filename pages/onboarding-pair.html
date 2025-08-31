@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>配對體脂機頁面</title>
+    
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg-primary-base d-flex flex-column" 
+      style="min-height: 100vh">
+      
+      <%- include('./layout/header'); -%>    
+      <div class="py-3 ps-6 mb-4 align-self-start">
+          <a href="onboarding-info.html">
+            <button class="btn border-0 p-0">
+              <img class="border rounded-circle bg-white arrow-prev-btn" 
+                   src="../assets/images/onboarding/arrow-prev.svg" 
+                   alt="arrow-prev">
+            </button>
+          </a>
+      </div>
+       
+        <main class="circle-pulse-container pt-4 pb-6 overflow-x-hidden">
+          <div class="circle-pulse circle-pulse1 bg-primary-300"></div>
+          <div class="circle-pulse circle-pulse2 bg-primary-400"></div>
+          <div class="circle-pulse circle-pulse3 bg-primary-600"></div>
+          <div class="circle-pulse circle-pulse4 bg-primary-800"></div>
+
+          <div class="text-neutral-950 text-center position-absolute top-0 start-50 translate-middle-x pt-4 pb-9">
+            <h3 class="mb-4">配對您的體脂機</h3>
+            <p>打開藍牙，點選</p>
+            <p style="white-space: nowrap;">Coach Potato  Max3 進行配對</p>
+          </div>
+
+          <div class="position-absolute z-1 top-50 start-50 translate-middle" 
+               style="width: 290px;height: 290px">
+            <img src="../assets/images/onboarding/body＿fat＿scale@3x.png"   
+                 alt="body＿fat＿scale"
+                 class="w-100">
+          </div>
+        
+        </main>
+
+        <footer class="px-4 pt-4 pb-7 mt-auto bg-primary-base w-100">
+            <a href="onboarding-measure.html">
+              <button type="button" class="footer-btn rounded-pill w-100 py-4 animate__animated animate__fadeIn animate__delay-2s">
+              <span class="h3">繼續</span>
+              </button>
+            </a>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
