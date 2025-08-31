@@ -5,157 +5,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>基本資料頁面</title>
-    
   </head>
   <body>
     <div class="wrap">
-      <main class="bg-primary-base d-flex flex-column" style="min-height: 100vh">
-      <%- include('./layout/header'); -%>
+      <main
+        class="bg-primary-base d-flex flex-column"
+        style="min-height: 100vh"
+      >
+        <%- include('./layout/header'); -%>
         <div class="py-3 ps-6 mb-4">
           <a href="index.html">
             <button class="btn border-0 p-0">
-              <img class="border rounded-circle bg-white arrow-prev-btn" 
-                   src="../assets/images/onboarding/arrow-prev.svg" 
-                   alt="arrow-prev">
+              <img
+                class="border rounded-circle bg-white arrow-prev-btn"
+                src="../assets/images/icon/arrow-prev.svg"
+                alt="arrow-prev"
+              />
             </button>
           </a>
         </div>
         <div class="px-5 py-7 d-flex flex-column align-items-center">
           <h3 class="mb-8">你的基本資料</h3>
           <div class="d-flex flex-column align-items-center w-100">
-    <!--avatar-->
+            <!--avatar-->
             <div class="position-relative mb-5">
-              <img src="../assets/images/onboarding/user_avatar@3x.png" 
-                   class="avatar-img" 
-                   alt="user_avatar">
-              <img src="../assets/images/onboarding/iconPen2.svg"
-                   class="position-absolute iconPen2" 
-                   alt="iconPen2">
+              <img
+                src="../assets/images/draw/user_avatar@3x.png"
+                class="avatar-img"
+                alt="user_avatar"
+              />
+              <img
+                src="../assets/images/icon/iconPen2.svg"
+                class="position-absolute iconPen2"
+                alt="iconPen2"
+              />
             </div>
             <form class="input-group mb-5 position-relative">
-                <button class="btn bg-white rounded-start-4"  
-                        type="button"  
-                        id="nick-name">
-                    <img src="../assets/images/onboarding/iconPen1.svg" 
-                         class="iconPen1"  
-                         alt="iconPen1">
-                </button>
-                <input type="text" 
-                       class="form-control border-0 fw-bold text-center" 
-                       id="nickName"
-                       placeholder="暱稱" 
-                       aria-label="" aria-describedby="nick-name">
-                <span class="input-group-text border-0 rounded-end-4 bg-white" style="width: 60px;"></span>
+              <button
+                class="btn bg-white rounded-start-4"
+                type="button"
+                id="nick-name"
+              >
+                <img
+                  src="../assets/images/icon/iconPen1.svg"
+                  class="iconPen1"
+                  alt="iconPen1"
+                />
+              </button>
+              <input
+                type="text"
+                class="form-control border-0 fw-bold text-center"
+                id="nickName"
+                placeholder="暱稱"
+                aria-label=""
+                aria-describedby="nick-name"
+              />
+              <span
+                class="input-group-text border-0 rounded-end-4 bg-white"
+                style="width: 60px"
+              ></span>
             </form>
-    <!--dropdown info-->
+            <!--dropdown info-->
             <div class="dropdown w-100">
-                <button class="btn bg-white rounded-top-4 rounded-bottom-0 w-100 d-flex justify-content-between align-items-center py-5" 
-                        type="button" 
-                        id="genderSelect" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                        <div class="d-flex">
-                          <img src="../assets/images/onboarding/icon_GenderIntersex.svg" alt="icon_GenderIntersex" class="d-inline block me-2"> 
-                          <span>性別</span>
-                        </div>
-                        <img src="../assets/images/onboarding/arrowRight2_32.svg" 
-                             alt="arrowRight" class="arrowRight_20">
-                </button>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="genderSelect">
-                    <li><option class="dropdown-item">男</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">女</option></li>
-                  </ul>
+              <button
+                class="btn bg-white rounded-top-4 rounded-bottom-0 w-100 d-flex justify-content-between align-items-center py-5"
+                type="button"
+                id="genderSelect"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex">
+                  <img
+                    src="../assets/images/icon/icon_GenderIntersex.svg"
+                    alt="icon_GenderIntersex"
+                    class="d-inline block me-2"
+                  />
+                  <span>性別</span>
+                </div>
+                <img
+                  src="../assets/images/icon/arrowRight2_32.svg"
+                  alt="arrowRight"
+                  class="arrowRight_20"
+                />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="genderSelect"
+              >
+                <li><option class="dropdown-item">男</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">女</option></li>
+              </ul>
             </div>
             <div class="dropdown w-100">
-                <button class="btn bg-white rounded-0 w-100 d-flex justify-content-between align-items-center py-5" 
-                        type="button" 
-                        id="bodyHeightSelect" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                        <div class="d-flex">
-                          <img src="../assets/images/onboarding/icon_Person.svg" alt="icon_Person" class="d-inline block me-2"> 
-                          <span>身高</span>
-                        </div>
-                        <img src="../assets/images/onboarding/arrowRight2_32.svg" 
-                             alt="arrowRight" class="arrowRight_20">
-                </button>
-                  <ul class="dropdown-menu dropdown-menu-end text-center overflow-y-auto"   
-                      aria-labelledby="bodyHeightSelect"
-                      style="max-height: 200px">
-                    <li><option class="dropdown-item">141 - 145</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">146 - 150</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">151 - 155</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">156 - 160</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">161 - 165</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">166 - 170</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">171 - 175</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">176 - 180</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">181 - 185</option></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><option class="dropdown-item">186 - 190</option></li>
-                  </ul>
+              <button
+                class="btn bg-white rounded-0 w-100 d-flex justify-content-between align-items-center py-5"
+                type="button"
+                id="bodyHeightSelect"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex">
+                  <img
+                    src="../assets/images/icon/icon_Person.svg"
+                    alt="icon_Person"
+                    class="d-inline block me-2"
+                  />
+                  <span>身高</span>
+                </div>
+                <img
+                  src="../assets/images/icon/arrowRight2_32.svg"
+                  alt="arrowRight"
+                  class="arrowRight_20"
+                />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end text-center overflow-y-auto"
+                aria-labelledby="bodyHeightSelect"
+                style="max-height: 200px"
+              >
+                <li><option class="dropdown-item">141 - 145</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">146 - 150</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">151 - 155</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">156 - 160</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">161 - 165</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">166 - 170</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">171 - 175</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">176 - 180</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">181 - 185</option></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><option class="dropdown-item">186 - 190</option></li>
+              </ul>
             </div>
             <div class="dropdown w-100">
-                <button class="btn bg-white rounded-top-0 rounded-bottom-4 rounded-bottom-0 w-100 d-flex justify-content-between align-items-center py-5" 
-                        type="button" 
-                        id="birthdaySelect" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                        <div class="d-flex">
-                          <img src="../assets/images/onboarding/icon_Cake.svg" alt="icon_Cake" class="d-inline block me-2"> 
-                          <span>生日</span>
-                        </div>
-                        <img src="../assets/images/onboarding/arrowRight2_32.svg" 
-                             alt="arrowRight" class="arrowRight_20">
-                </button>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="birthdaySelect">
-                    <li><option class="dropdown-item">2000/10/10</option></li>
-                  </ul>
+              <button
+                class="btn bg-white rounded-top-0 rounded-bottom-4 rounded-bottom-0 w-100 d-flex justify-content-between align-items-center py-5"
+                type="button"
+                id="birthdaySelect"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex">
+                  <img
+                    src="../assets/images/icon/icon_Cake.svg"
+                    alt="icon_Cake"
+                    class="d-inline block me-2"
+                  />
+                  <span>生日</span>
+                </div>
+                <img
+                  src="../assets/images/icon/arrowRight2_32.svg"
+                  alt="arrowRight"
+                  class="arrowRight_20"
+                />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="birthdaySelect"
+              >
+                <li><option class="dropdown-item">2000/10/10</option></li>
+              </ul>
             </div>
           </div>
         </div>
         <footer class="px-4 pt-4 pb-7 mt-auto bg-primary-base w-100">
-            <a href="onboarding-pair.html">
-              <button type="button" class="footer-btn rounded-pill w-100 py-4 animate__animated animate__fadeIn animate__delay-2s">
+          <a href="onboarding-pair.html">
+            <button
+              type="button"
+              class="footer-btn rounded-pill w-100 py-4 animate__animated animate__fadeIn animate__delay-2s"
+            >
               <span class="h3">繼續</span>
-              </button>
-            </a>
+            </button>
+          </a>
         </footer>
       </main>
     </div>
 
-
-
-
-
     <script>
-    const input = document.getElementById('nickName');
-    const placeholders = ["暱稱", "Wendy"];
-    let i = 0;
+      const input = document.getElementById("nickName");
+      const placeholders = ["暱稱", "Wendy"];
+      let i = 0;
 
-    input.placeholder = placeholders[i];
+      input.placeholder = placeholders[i];
 
-    const interval = setInterval(() => {
-      i++;
-      if (i >= placeholders.length) {
-        clearInterval(interval);
-        return;
-      }
-      input.placeholder = "";
-      setTimeout(() => {
-        input.placeholder = placeholders[i];
-      }, 500); 
-
-    }, 2000); //
+      const interval = setInterval(() => {
+        i++;
+        if (i >= placeholders.length) {
+          clearInterval(interval);
+          return;
+        }
+        input.placeholder = "";
+        setTimeout(() => {
+          input.placeholder = placeholders[i];
+        }, 500);
+      }, 2000); //
     </script>
 
     <script type="module" src="../main.js"></script>

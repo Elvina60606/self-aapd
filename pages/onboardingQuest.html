@@ -25,18 +25,22 @@
         >
           <p class="header-time">9:41</p>
           <div class="d-flex align-items-center gap-2">
-            <img src="../assets/images/Mobile Signal.svg" alt="Mobile Signal" />
-            <img src="../assets/images/Wifi.svg" alt="Wifi" />
             <img
-              src="../assets/images/_StatusBar-battery.svg"
+              src="../assets/images/icon_phone/Mobile_Signal.svg"
+              alt="Mobile Signal"
+            />
+            <img src="../assets/images/icon_phone/Wifi.svg" alt="Wifi" />
+            <img
+              src="../assets/images/icon_phone/StatusBar-battery.svg"
               alt="StatusBar-battery"
             />
           </div>
         </header>
 
         <!-- 回上一頁按鈕 -->
+        <!-- 展示用｜暫時連去數據結果頁 -->
         <nav class="py-3 px-4 mb-2">
-          <a href="#">
+          <a href="./onboarding-data.html">
             <i class="ph ph-arrow-left icon__bg-circle--w"></i>
           </a>
         </nav>
@@ -233,9 +237,11 @@
 
         <!-- 置底確認按鈕 -->
         <!-- 待做　動態：預設隱藏，捲到底部才出現 -->
+        <!-- 展示用｜暫時連去健康趨勢首頁 -->
         <footer class="fixed-bottom px-4 pt-4 pb-7">
           <button
             type="button"
+            onclick="location.href='health-trend-latest.html'"
             class="btn btn-lg btn-accent text-white fw-bold rounded-pill w-100"
           >
             確認

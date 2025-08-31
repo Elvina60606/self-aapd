@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>測量中頁面</title>
 
-    <meta http-equiv="refresh" content="5; url=onboarding-data.html">
-
+    <meta http-equiv="refresh" content="5; url=onboarding-data.html" />
   </head>
   <body>
-    <div class="wrap" >
-      <div class="bg-primary-base d-flex flex-column overflow-hidden" 
-          style="min-height: 100vh">
-      <%- include('./layout/header'); -%>
-      
+    <div class="wrap">
+      <div
+        class="bg-primary-base d-flex flex-column overflow-hidden"
+        style="min-height: 100vh"
+      >
+        <%- include('./layout/header'); -%>
+
         <div class="px-5 mt-10 mb-13 text-center">
-        <h3 class="mb-8">測量中</h3>
-        <div class="bg-white border-white rounded-pill"
-             style="height: 23px;">
+          <h3 class="mb-8">測量中</h3>
+          <div class="bg-white border-white rounded-pill" style="height: 23px">
             <div class="progress-fill rounded-pill"></div>
-        </div>
+          </div>
         </div>
 
         <div class="position-relative d-flex justify-content-center z-0">
-          <img src="../assets/images/onboarding/coach_measure.svg"   
-               alt="coach_measure" style="width: 154.67px; height: 232px">
-  
+          <img
+            src="../assets/images/draw_potatoCoach/coach_measure.svg"
+            alt="coach_measure"
+            style="width: 154.67px; height: 232px"
+          />
+
           <span class="number n1 text-white">30</span>
           <span class="number n2 delay text-primary-300">35.7</span>
           <span class="number n3 text-primary-200">66.7</span>
@@ -38,7 +41,6 @@
           <span class="number n9 text-primary-300">75.4</span>
           <span class="number n10 delay text-primary-300">33.8</span>
         </div>
-    
       </div>
     </div>
     <script type="module" src="../main.js"></script>
