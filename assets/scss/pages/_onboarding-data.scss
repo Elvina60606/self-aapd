@@ -1,6 +1,4 @@
-*{
-    outline: 1px dashed #99f;
-}
+
 .pb-99{
     padding-bottom: 99px;
 }
@@ -29,4 +27,33 @@
 .data-col-6{
     width: calc(50% - 6px);
     padding: 8px 12px;
+}
+
+.chat-bubble{
+    width: 256px;
+    position: relative;
+    padding: 10px 12px;
+}
+.chat-left {
+  align-self: flex-start;
+}
+.chat-left::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid $white;
+}
+.chat-shadow{
+    box-shadow: 0 .5rem 1rem rgba(243, 175, 92, 0.4);
+}
+.chat-coach{
+    width: 201px;   
+    height: 125px;
+    object-fit: cover;
+    object-position: top;
 }
