@@ -1,13 +1,28 @@
+// 變數
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import "./utils/variables";
+
+// 字體
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Bootstrap
 @import "../../node_modules/bootstrap";
 
+// 基礎
+@import "./base/base";
+@import "./base/font";
 
+// 元件
+@import "./components/app";
+@import "./components/button";
+@import "./components/nav";
 
-@import './components/button';
+// 共用
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-@import './pages/index.scss';
-@import './pages/health-trend.scss';
+// 分頁
+@import "./pages/index.scss";
+@import "./pages/health-trend.scss";
+@import "./pages/onboardingIndex.scss";
+@import "./pages/onboardingQuest.scss";
