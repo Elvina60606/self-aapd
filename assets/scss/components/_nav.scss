@@ -1,0 +1,13 @@
+// 自訂 icon 背景圓圈（白）
+.icon__bg-circle--w {
+  background: $white;
+  border: 1px solid $neutral-200;
+  border-radius: 1000px;
+  padding: 8px;
+}
+
+// onboarding 的 nav button 底色
+.nav__bg {
+  background: $accent-100;
+  border-radius: 50rem;
+}

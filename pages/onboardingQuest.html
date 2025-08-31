@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>推薦任務｜Coach Potato</title>
+    <!-- 載入 phosphor icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  </head>
+  <body>
+    <div class="bg-accent-50 min-vh-100">
+      <div class="container-md">
+        <!-- 載入手機系統 icon 模擬 -->
+        <header
+          class="sticky-top px-7 py-6 d-flex justify-content-between align-items-center"
+        >
+          <p class="header-time">9:41</p>
+          <div class="d-flex align-items-center gap-2">
+            <img src="../assets/images/Mobile Signal.svg" alt="Mobile Signal" />
+            <img src="../assets/images/Wifi.svg" alt="Wifi" />
+            <img
+              src="../assets/images/_StatusBar-battery.svg"
+              alt="StatusBar-battery"
+            />
+          </div>
+        </header>
+
+        <!-- 回上一頁按鈕 -->
+        <nav class="py-3 px-4 mb-2">
+          <a href="#">
+            <i class="ph ph-arrow-left icon__bg-circle--w"></i>
+          </a>
+        </nav>
+
+        <!-- 主畫面 -->
+        <main
+          class="d-flex flex-column align-items-center app__main-bottom-space pt-4 px-2"
+        >
+          <!-- 標題 -->
+          <h1 class="fs-3 mb-3 z-1">推薦任務</h1>
+          <p class="lh-lg mb-7 z-1">Coach推薦給您的任務</p>
+
+          <!-- 分頁切換用膠囊按鈕 -->
+          <!-- 待做　變數：設計需求 → 按選取的項目數量變更按鈕上的數字 -->
+          <ul
+            class="nav nav-pills nav__bg mb-7 z-1"
+            id="menu-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link rounded-pill py-3 px-7 active"
+                id="pills-menuSport-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-menuSport"
+                type="button"
+                role="tab"
+                aria-controls="pills-menuSport"
+                aria-selected="true"
+              >
+                運動 4
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link rounded-pill py-3 px-7"
+                id="pills-menuDiet-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-menuDiet"
+                type="button"
+                role="tab"
+                aria-controls="pills-menuDiet"
+                aria-selected="false"
+              >
+                飲食 1
+              </button>
+            </li>
+          </ul>
+
+          <!-- 說明文字 -->
+          <p class="mb-3 z-1">請選擇3-5項你想執行的任務。</p>
+
+          <!-- 分頁內容：運動 -->
+          <div class="tab-content w-100 z-1" id="menu-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-menuSport"
+              role="tabpanel"
+              aria-labelledby="pills-menuSport-tab"
+            >
+              <div class="d-flex flex-column gap-3">
+                <!-- 預設已選取的選項 4 -->
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOption"
+                  id="sportOption1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn checkbox__btn" for="sportOption1"
+                  >仰臥起坐 30次 / 天</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="sportOption2"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn checkbox__btn" for="sportOption2"
+                  >深蹲 30次 / 天</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="sportOption3"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn checkbox__btn" for="sportOption3"
+                  >跳繩 50下 / 天</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="sportOption4"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn checkbox__btn" for="sportOption4"
+                  >有氧訓練 15分鐘有氧 / 天</label
+                >
+
+                <!-- 預設未選取的選項 -->
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="sportOption5"
+                  autocomplete="off"
+                />
+                <label class="btn checkbox__btn" for="sportOption5"
+                  >每小時起來走走</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="sportOption6"
+                  autocomplete="off"
+                />
+                <label class="btn checkbox__btn" for="sportOption6"
+                  >步數達到 5000步 / 每週3次</label
+                >
+              </div>
+            </div>
+
+            <!-- 分頁內容：飲食 -->
+            <div
+              class="tab-pane fade"
+              id="pills-menuDiet"
+              role="tabpanel"
+              aria-labelledby="pills-menuDiet-tab"
+            >
+              <div class="d-flex flex-column gap-3">
+                <!-- 預設已選取的選項 1 -->
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="dietOption1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn checkbox__btn" for="dietOption1"
+                  >至少 1/4 份蛋白質 / 每餐</label
+                >
+
+                <!-- 預設未選取的選項 -->
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="dietOption2"
+                  autocomplete="off"
+                />
+                <label class="btn checkbox__btn" for="dietOption2"
+                  >至少 1/2 份蔬菜 / 每餐</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="dietOption3"
+                  autocomplete="off"
+                />
+                <label class="btn checkbox__btn" for="dietOption3"
+                  >不超過 1/4 份全穀類 / 每餐</label
+                >
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  name="menuCheckOpiton"
+                  id="dietOption4"
+                  autocomplete="off"
+                />
+                <label class="btn checkbox__btn" for="dietOption4"
+                  >用餐前喝一杯白開水</label
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- 置底確認按鈕 -->
+        <!-- 待做　動態：預設隱藏，捲到底部才出現 -->
+        <footer class="fixed-bottom px-4 pt-4 pb-7">
+          <button
+            type="button"
+            class="btn btn-lg btn-accent text-white fw-bold rounded-pill w-100"
+          >
+            確認
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!-- 底圖裝飾實心圓 -->
+    <div class="bg__solid-circle"></div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+// 底圖裝飾實心圓
+.bg__solid-circle {
+  position: fixed;
+  bottom: -20%;
+  left: -15%;
+  width: 130vw;
+  height: 130vw;
+  background-color: $accent-200;
+  border-radius: 50%;
+  z-index: 0;
+}
