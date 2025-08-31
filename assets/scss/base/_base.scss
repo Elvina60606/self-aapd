@@ -1,0 +1,11 @@
+// 隱藏 phone prototype 捲軸
+html,
+body {
+  overflow-y: auto;
+  scrollbar-width: none; // firebox
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; // chrome、edge、safari
+}
