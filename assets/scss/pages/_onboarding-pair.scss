@@ -1,0 +1,78 @@
+.circle-pulse-container{
+    position: relative;
+    width: 100%;
+    height: 576px;
+}
+
+.circle-pulse{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+}
+
+.circle-pulse1{    
+    width: 574px;
+    height: 574px;
+    opacity: 0.5;
+    animation: pulse1 3s infinite ease-in-out;
+}
+.circle-pulse2{
+    width: 498px;
+    height: 498px;
+    opacity: 0.4;
+    animation: pulse2 3s infinite ease-in-out;
+}
+.circle-pulse3{
+    width: 374px;
+    height: 374px;
+    opacity: 0.5;
+    animation: pulse3 3s infinite ease-in-out;
+}
+.circle-pulse4{
+    width: 308px;
+    height: 308px;
+    opacity: 0.7;
+    animation: pulse4 3s infinite ease-in-out;
+}
+
+@keyframes pulse1{
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+}
+@keyframes pulse2{
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.87);
+    }
+
+}
+@keyframes pulse3{
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.92);
+    }
+
+}
+@keyframes pulse4{
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+}

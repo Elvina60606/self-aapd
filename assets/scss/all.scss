@@ -2,7 +2,8 @@
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 
-
+@import './utils/utilities';
+@import "bootstrap/scss/utilities/api";
 
 @import './components/button';
 
@@ -10,4 +11,10 @@
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/onboarding-info';
+@import './pages/onboarding-pair';
+@import './pages/onboarding-measure';
+@import './pages/onboarding-data';
+
 @import './pages/health-trend.scss';
+

@@ -495,7 +495,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  false !default;
+$enable-rfs:                  false; //AAPD//
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -539,6 +539,7 @@ $spacers: (
   10: $spacer * 3,    //48
   11: $spacer * 3.5, //56
   12: $spacer * 4,   //64
+  13: $spacer * 5,   //80 
 ) ;
 // AAPD scss-docs-end spacer-variables-maps
 
@@ -1423,7 +1424,8 @@ $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
-$dropdown-item-padding-y:           $spacer * .25 !default;
+//$dropdown-item-padding-y:           $spacer * .25 !default;
+$dropdown-item-padding-y:         $spacer * .5;
 $dropdown-item-padding-x:           $spacer !default;
 
 $dropdown-header-color:             $gray-600 !default;
