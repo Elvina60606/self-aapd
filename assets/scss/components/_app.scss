@@ -1,5 +1,12 @@
-// 內容保留空間
-// 避免被置底確認按鈕遮檔
+// 置底保留空間
+// 避免被置底確認按鈕遮檔內容
 .app__main-bottom-space {
   padding-bottom: 112px;
+}
+
+// 置頂保留空間
+// 避免被置頂 icon 條遮檔內容
+.app__status-bar-space {
+  height: 60px;
+  background: transparent;
 }
