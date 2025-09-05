@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>測量結果頁面</title>
+    <title>任務選擇頁面</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <div class="wrap">
-      <div class="bg-primary-base d-flex flex-column">
-        <%- include('./layout/header'); -%>
+    <div class="wrap bg-primary-100">
+      <div class="bg-primary-100 d-flex flex-column">
+        <header class="sticky-top header px-7 py-6 d-flex justify-content-between align-items-center">
+            <p class="header-time">9:41</p>
+            <div class="d-flex align-items-center gap-2">
+                <img src="../assets/images/icon_phone/Mobile_Signal.svg" alt="Mobile Signal"/>
+                <img src="../assets/images/icon_phone/Wifi.svg" alt="Wifi" />
+                <img src="../assets/images/icon_phone/StatusBar-battery.svg"   
+                     alt="StatusBar-battery"/>
+            </div>
+        </header>        
     <!--暫時連結-->
         <div class="py-3 ps-6 mb-4">
           <a href="onboarding-pair.html">
@@ -29,13 +37,31 @@
             <h3 class="text-neutral-950">設定您的目標</h3>
             <p class="text-neutral-950">請選擇您想達成的目標</p>
           </div>
-          
-          <a class="d-block mb-5 w-100" href="#">
-            <button class="btn bg-white rounded-4 py-5 w-100">
+
+          <div class="w-100 mb-134">
+            <a class="btn goal-select rounded-4 shadow py-5 mb-5 w-100"   
+               href="#">
               <h4 class="text-black">減脂</h4>
               <p class="text-black fs-7">減少體脂肪，打造精實身材</p>
-            </button>
-          </a>
+            </a>
+
+            <a class="btn goal-select rounded-4 shadow py-5 mb-5 w-100"   
+               href="#">
+              <h4 class="text-black">增肌</h4>
+              <p class="text-black fs-7">增加肌肉量，提升基礎代謝</p>
+            </a>
+
+            <a class="btn goal-select rounded-4 shadow py-5 w-100"   
+               href="#">
+              <h4 class="text-black">保持</h4>
+              <p class="text-black fs-7">養成健康習慣，保持體態</p>
+            </a>
+          </div>
+
+          <img src="../assets/images/draw_potatoCoach/coachpotato_mascot_cap@3x.png" 
+          class="overflow-hidden w-100"
+          alt="coachpotato_mascot_cap">
+
 
 
         </main>
