@@ -1,3 +1,30 @@
 .img__coach--size {
   width: 70%;
 }
+
+.plan__table {
+  background: $primary-100;
+  border: 2px solid $primary-800;
+  border-radius: 12px;
+  padding: 1rem;
+
+  table {
+    width: 100%;
+  }
+  th {
+    font-size: 1.125rem;
+    vertical-align: top;
+  }
+}
+
+.table__border {
+  border-top: 1px solid $primary-400;
+  border-bottom: 1px solid $primary-400;
+}
+
+// 讓 canvas 不會被上下文框擠壓
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
