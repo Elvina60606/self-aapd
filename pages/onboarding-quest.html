@@ -40,15 +40,16 @@
       <div class="container">
         <!-- 回上一頁按鈕 -->
         <!-- 展示用｜暫時連去數據結果頁 -->
-        <nav class="py-3 px-4 mb-2">
+        <nav class="position-fixed py-3 px-4 mb-2">
           <a href="./onboarding-data.html">
             <i class="ph ph-arrow-left icon__bg-circle--w"></i>
           </a>
         </nav>
+        <div class="app__status-bar-space--prev"></div>
 
         <!-- 主畫面 -->
         <main
-          class="d-flex flex-column align-items-center app__main-bottom-space pt-4 px-2"
+          class="d-flex flex-column align-items-center app__main-bottom-space pt-4"
         >
           <!-- 標題 -->
           <h1 class="fs-3 mb-3 z-1">推薦任務</h1>
@@ -113,7 +114,7 @@
                   checked
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption1"
                   >仰臥起坐 30次 / 天</label
                 >
@@ -127,7 +128,7 @@
                   checked
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption2"
                   >深蹲 30次 / 天</label
                 >
@@ -141,7 +142,7 @@
                   checked
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption3"
                   >跳繩 50下 / 天</label
                 >
@@ -155,7 +156,7 @@
                   checked
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption4"
                   >有氧訓練 15分鐘有氧 / 天</label
                 >
@@ -169,7 +170,7 @@
                   autocomplete="off"
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption5"
                   >每小時起來走走</label
                 >
@@ -182,7 +183,7 @@
                   autocomplete="off"
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="sportOption6"
                   >步數達到 5000步 / 每週3次</label
                 >
@@ -207,7 +208,7 @@
                   checked
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="dietOption1"
                   >至少 1/4 份蛋白質 / 每餐</label
                 >
@@ -221,7 +222,7 @@
                   autocomplete="off"
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="dietOption2"
                   >至少 1/2 份蔬菜 / 每餐</label
                 >
@@ -234,7 +235,7 @@
                   autocomplete="off"
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="dietOption3"
                   >不超過 1/4 份全穀類 / 每餐</label
                 >
@@ -247,7 +248,7 @@
                   autocomplete="off"
                 />
                 <label
-                  class="btn checkbox__btn checkbox__shadow--double"
+                  class="btn checkbox__btn shadow--double"
                   for="dietOption4"
                   >用餐前喝一杯白開水</label
                 >
@@ -257,8 +258,8 @@
         </main>
 
         <!-- 置底確認按鈕 -->
-        <!-- 待做　動態：預設隱藏，捲到底部才出現 -->
-        <footer class="fixed-bottom px-4 pt-4 pb-7">
+        <!-- 待修：js 判斷式無法起作用 -->
+        <footer id="scrollButton" class="fixed-bottom px-4 pt-4 pb-7">
           <button
             type="button"
             onclick="location.href='./onboarding-plan.html'"

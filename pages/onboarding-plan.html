@@ -51,6 +51,7 @@
           </a>
         </nav>
       </div>
+      <div class="app__status-bar-space--prev"></div>
 
       <!-- 主畫面 -->
       <main class="app__main-bottom-space pt-4">
@@ -62,11 +63,13 @@
         </section>
 
         <!-- 圖表 -->
-        <canvas id="myChart" class="mb-5"></canvas>
+        <div class="chart__box--plan mb-5">
+          <canvas id="myChart"></canvas>
+        </div>
 
         <section class="container">
           <!-- 表格 -->
-          <div class="plan__table mb-5">
+          <div class="plan__table shadow--double mb-5">
             <table>
               <tbody>
                 <tr>
@@ -108,18 +111,18 @@
             <img
               src="../assets/images/draw_potatoCoach/CoachPotato_go@2x.png"
               alt="CoachPotato_go"
-              class="img__coach--size"
+              class="plan__img--coach"
             />
           </div>
         </section>
       </main>
 
       <!-- 置底確認按鈕 -->
-      <footer class="fixed-bottom px-4 pt-4 pb-7">
+      <!-- 展示用｜暫時連到健康趨勢頁 -->
+      <footer id="scrollButton" class="fixed-bottom d-none px-4 pt-4 pb-7">
         <button
           type="button"
-          id="scrollButton"
-          onclick="location.href='./home.html'"
+          onclick="location.href='./health-trend-latest.html'"
           class="btn btn-lg btn-accent text-white fw-bold rounded-pill w-100"
         >
           確認

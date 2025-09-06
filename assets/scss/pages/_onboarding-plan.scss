@@ -1,5 +1,6 @@
-.img__coach--size {
+.plan__img--coach {
   width: 70%;
+  transform: scaleX(-1); // 左右翻轉
 }
 
 .plan__table {
@@ -27,4 +28,9 @@ canvas {
   display: block;
   width: 100% !important;
   height: 100% !important;
+}
+
+.chart__box--plan {
+  width: 100%;
+  height: 249px;
 }
