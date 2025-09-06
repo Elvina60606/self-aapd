@@ -45,7 +45,7 @@
 
       <div class="container">
         <!-- 回上一頁按鈕 -->
-        <nav class="py-3 px-4 mb-2">
+        <nav class="position-fixed py-3 px-4 mb-2">
           <a href="./onboarding-quest.html">
             <i class="ph ph-arrow-left icon__bg-circle--w"></i>
           </a>
@@ -86,10 +86,10 @@
       </main>
 
       <!-- 置底確認按鈕 -->
-      <!-- 待做　動態：預設隱藏，捲到底部才出現 -->
       <footer class="fixed-bottom px-4 pt-4 pb-7">
         <button
           type="button"
+          id="scrollButton"
           onclick="location.href='./home.html'"
           class="btn btn-lg btn-accent text-white fw-bold rounded-pill w-100"
         >
