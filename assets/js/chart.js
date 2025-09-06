@@ -125,22 +125,23 @@ const myChart = new Chart(ctx, {
     animation: {
       duration: 1000,
     },
-    // 隱藏軸線、網格、刻度
     scales: {
       x: {
         border: {
-          display: false,
+          display: false, // 隱藏軸線
         },
         grid: {
-          display: false,
+          display: false, // 隱藏網格
           drawTicks: false,
           drawBorder: false,
         },
         ticks: {
-          display: false,
+          display: false, // 隱藏刻度
         },
       },
       y: {
+        max: 40, // 調整 Y 軸範圍
+        min: 10,
         border: {
           display: false,
         },
@@ -165,6 +166,12 @@ const myChart = new Chart(ctx, {
     interaction: {
       intersect: false,
       mode: "nearest",
+    },
+    layout: {
+      padding: {
+        top: 30,
+        bottom: 30, // 多留點底部空白
+      },
     },
   },
   plugins: [highlightPlugin],
