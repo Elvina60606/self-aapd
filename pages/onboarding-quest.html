@@ -20,7 +20,7 @@
     <div class="bg-accent-50 min-vh-100">
       <!-- 載入手機系統 icon 模擬 -->
       <header
-        class="sticky-top px-7 py-6 d-flex justify-content-between align-items-center"
+        class="fixed-top bg-accent-50 px-7 py-6 d-flex justify-content-between align-items-center"
       >
         <p class="header-time">9:41</p>
         <div class="d-flex align-items-center gap-2">
@@ -35,6 +35,8 @@
           />
         </div>
       </header>
+      <!-- 保留空間 -->
+      <div class="app__status-bar-space"></div>
       <div class="container">
         <!-- 回上一頁按鈕 -->
         <!-- 展示用｜暫時連去數據結果頁 -->
@@ -50,7 +52,7 @@
         >
           <!-- 標題 -->
           <h1 class="fs-3 mb-3 z-1">推薦任務</h1>
-          <p class="lh-lg mb-7 z-1">Coach推薦給您的任務</p>
+          <p class="mb-7 z-1">Coach推薦給您的任務</p>
 
           <!-- 分頁切換用膠囊按鈕 -->
           <!-- 待做　變數：設計需求 → 按選取的項目數量變更按鈕上的數字 -->
