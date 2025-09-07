@@ -19,3 +19,15 @@
     width: 20px;
     height: 20px;
 }
+
+.position-icon-person{
+    top: 50%;
+    left: 12px;
+    transform: translate(0 , -50%);
+}
+
+.position-arrowRight{
+    top: 50%;
+    right: 12px;
+    transform: translate(0 , -50%);
+}
