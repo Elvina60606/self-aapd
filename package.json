@@ -12,6 +12,7 @@
   "devDependencies": {
     "ejs": "^3.1.9",
     "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-ejs": "^1.7.0"
   },
   "dependencies": {
