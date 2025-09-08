@@ -41,6 +41,14 @@
     transform: scaleX(-1);
 }
 
+.top-safe {
+    padding-top: 60px;
+}           
+
 .bottom-safe {
     padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
+
+.coach8 {
+    width: 206px;
 }
