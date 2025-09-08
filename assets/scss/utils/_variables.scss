@@ -677,7 +677,9 @@ $grid-row-columns: 6 !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width !default;
+// AAPD
+$container-padding-x: 2rem;
+// $container-padding-x: $grid-gutter-width !default;
 
 // Components
 //

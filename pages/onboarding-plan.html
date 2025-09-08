@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>健身計畫｜Coach Potato</title>
+    <!-- 載入 phosphor icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <!-- 載入 AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-primary-base min-vh-100">
+      <!-- 載入手機系統 icon 模擬 -->
+      <header
+        class="fixed-top bg-primary-base px-7 py-6 d-flex justify-content-between align-items-center"
+      >
+        <p class="header-time">9:41</p>
+        <div class="d-flex align-items-center gap-2">
+          <img
+            src="../assets/images/icon_phone/Mobile_Signal.svg"
+            alt="Mobile Signal"
+          />
+          <img src="../assets/images/icon_phone/Wifi.svg" alt="Wifi" />
+          <img
+            src="../assets/images/icon_phone/StatusBar-battery.svg"
+            alt="StatusBar-battery"
+          />
+        </div>
+      </header>
+
+      <div class="app__status-bar-space"></div>
+
+      <div class="container">
+        <!-- 回上一頁按鈕 -->
+        <nav class="position-fixed py-3 px-3 mb-2">
+          <a href="./onboarding-quest.html">
+            <i class="ph ph-arrow-left icon__bg-circle--w"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="app__status-bar-space--prev"></div>
+
+      <!-- 主畫面 -->
+      <main class="app__main-bottom-space pt-4">
+        <section class="container d-flex flex-column align-items-center px-2">
+          <!-- 標題 -->
+          <h1 class="fs-3 mb-3">我的健身計劃</h1>
+          <p class="mb-3">預估您的體脂率將在 9月1日 降至</p>
+          <p class="mb-5"><span class="fs-2 fw-bold">23.3</span> %</p>
+        </section>
+
+        <!-- 圖表 -->
+        <div class="chart__box--plan mb-5">
+          <canvas id="myChart"></canvas>
+        </div>
+
+        <section class="container">
+          <!-- 表格 -->
+          <div class="plan__table shadow--double mb-5">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row" class="pb-3">目標</th>
+                  <td class="pb-3">減脂</td>
+                </tr>
+                <tr class="table__border">
+                  <th scope="row" class="pt-3 pb-3">難度</th>
+                  <td class="pt-3 pb-3">簡單（6周內）</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="pt-3">任務</th>
+                  <td class="pt-3">
+                    運動（4項）：
+                    <ul class="mb-0">
+                      <li>仰臥起坐 30次 / 天</li>
+                      <li>深蹲 30次 / 天</li>
+                      <li>跳繩 30次 / 天</li>
+                      <li>有氧訓練 15分鐘 / 天</li>
+                    </ul>
+                    飲食（1項）：
+                    <ul class="mb-0">
+                      <li>喝水 8杯水 / 天</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 插圖 -->
+          <div class="d-flex flex-column align-items-center">
+            <div
+              class="chat-bubble chat-left chat-shadow bg-white rounded-12 mx-auto"
+              data-aos="zoom-in"
+            >
+              <p class="fs-7 text-neutral-700" style="line-height: 1.4">
+                太棒了！讓我陪你一起達成目標吧！
+              </p>
+            </div>
+            <img
+              src="../assets/images/draw_potatoCoach/CoachPotato_go@2x.png"
+              alt="CoachPotato_go"
+              class="plan__img--coach"
+            />
+          </div>
+        </section>
+      </main>
+
+      <!-- 置底確認按鈕 -->
+      <!-- 展示用｜暫時連到健康趨勢頁 -->
+      <footer id="scrollButton" class="fixed-bottom d-none px-4 pt-4 pb-7">
+        <button
+          type="button"
+          onclick="location.href='./health-trend-latest.html'"
+          class="btn btn-lg btn-accent text-white fw-bold rounded-pill w-100"
+        >
+          確認
+        </button>
+      </footer>
+    </div>
+
+    <!-- 載入 AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- 載入 chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

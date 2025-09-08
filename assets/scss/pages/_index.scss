@@ -43,8 +43,16 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+    height: 100vh;
   }
   .phone::before {
     display: none;
+  }
+}
+
+@media (max-width: 393px) and (max-width: 852px) {
+  .phone {
+    width: 100vw;
+    height: 100vh;
   }
 }

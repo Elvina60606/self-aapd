@@ -10,3 +10,10 @@
   height: 60px;
   background: transparent;
 }
+
+// 置頂保留空間（上一頁按鈕）
+// 避免被置頂 icon 條遮檔內容
+.app__status-bar-space--prev {
+  height: 42px;
+  background: transparent;
+}
