@@ -39,11 +39,7 @@
 
 .ph-megaphone {
     transform: scaleX(-1);
-}
-
-.top-safe {
-    padding-top: 60px;
-}           
+}          
 
 .bottom-safe {
     padding-bottom: calc(60px + env(safe-area-inset-bottom));
