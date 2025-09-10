@@ -31,3 +31,31 @@
     right: 12px;
     transform: translate(0 , -50%);
 }
+
+/* 改背景色 */
+.flatpickr-calendar {
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+/* 改標題列顏色 */
+.flatpickr-months {
+ 
+  color: #fff;
+}
+
+/* 改日期格子 */
+.flatpickr-day {
+  color: #333;
+}
+
+.flatpickr-day.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.flatpickr-day:hover {
+  background-color: #cce5ff;
+}
