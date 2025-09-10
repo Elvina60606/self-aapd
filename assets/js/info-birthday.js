@@ -1,30 +1,35 @@
-// 匯入 Flatpickr CSS 與 JS
+// 匯入 Flatpickr CSS 和 JS
 import 'flatpickr/dist/flatpickr.min.css';
 import flatpickr from 'flatpickr';
 
-// 等整個頁面載入完成再初始化
 window.addEventListener("load", () => {
-  // 取得按鈕與隱藏 input
   const birthdayInput = document.getElementById("birthdayInput");
   const birthdayText = document.getElementById("birthdayText");
   const birthdayBtn = document.getElementById("birthdaySelect");
 
-  if (!birthdayInput || !birthdayText || !birthdayBtn) {
-    console.warn("Birthday elements not found, skipping Flatpickr initialization.");
-    return;
-  }
+  // 確認元素存在才初始化
+  if (!birthdayInput || !birthdayText || !birthdayBtn) return;
 
   // 初始化 Flatpickr
   const fp = flatpickr(birthdayInput, {
-    dateFormat: "Y-m-d",   // 日期格式
-    defaultDate: null,      // 預設不填日期
+    dateFormat: "Y-m-d",
+    appendTo: document.body,   // 日曆附加到 body
+    position: "bottom",         // 固定在 input 下方
     onChange: (selectedDates, dateStr) => {
-      // 選好日期後更新按鈕文字
-      birthdayText.textContent = dateStr || "生日";
+      birthdayText.textContent = dateStr || "生日"; // 更新按鈕文字
+    },
+    onReady: function () {
+      // 加上自訂 class
+      this.calendarContainer.classList.add("my-flatpickr");
+
+      // 可選：微調日曆位置（X, Y）
+      const rect = birthdayBtn.getBoundingClientRect();
+      this.calendarContainer.style.top = rect.bottom + "px"; 
+      this.calendarContainer.style.left = rect.left + "px"; 
     }
   });
 
-  // 點擊按鈕時開啟 Flatpickr
+  // 點擊按鈕開啟日曆
   birthdayBtn.addEventListener("click", () => {
     fp.open();
   });
