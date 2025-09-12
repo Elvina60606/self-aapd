@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   bottomNav.addEventListener("click", function (e) {
-    // e.preventDefault();
+    e.preventDefault();
 
     const clickedLink = e.target.closest(".nav-link");
     if (clickedLink) {
