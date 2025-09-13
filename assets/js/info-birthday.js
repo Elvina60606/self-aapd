@@ -14,7 +14,9 @@ window.addEventListener("load", () => {
   const fp = flatpickr(birthdayInput, {
     dateFormat: "Y-m-d",
     appendTo: document.body,   // 日曆附加到 body
-    position: "bottom",         // 固定在 input 下方
+    position: "bottom",        // 固定在 input 下方
+    disableMobile: true,       // 強制手機也顯示 Flatpickr
+
     onChange: (selectedDates, dateStr) => {
       birthdayText.textContent = dateStr || "生日"; // 更新按鈕文字
     },
