@@ -50,18 +50,14 @@
 .footer-in{
   display: none;
 }
-
-@media (min-height:660px) {
- .footer-in{
-  display: block;
- } 
-}
-
 .footer-out{
   display: block;
 }
 
 @media (min-height:660px) {
+ .footer-in{
+  display: block;
+  } 
   .footer-out{
     display: none;
   }
