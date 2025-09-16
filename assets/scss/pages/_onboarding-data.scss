@@ -57,14 +57,3 @@
     object-fit: cover;
     object-position: top;
 }
-
-.bottom-safe-area{
-  padding-bottom: calc(1rem + constant(safe-area-inset-bottom));  /* 老舊 iOS（legacy）支援 */
-  padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); /* 現代瀏覽器（env + fallback） */
-}
-
-@supports (padding: max(0px)) {
-  .bottom-safe-area {
-    padding-bottom: max(1rem, env(safe-area-inset-bottom));    /* 若瀏覽器支援 max()，以較合理的最小值為主 */
-  }
-}
