@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>配對體脂機頁面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>測量結果頁面-排除瀏覽器介面測試版</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script type="module" crossorigin src="/self-aapd/assets/main-CohmiwPO.js"></script>
     <link rel="stylesheet" crossorigin href="/self-aapd/assets/main-DKK5YSpE.css">
   </head>
   <body>
     <div class="bg-primary-base">
-      <div class="d-flex flex-column" 
+      <div class="d-flex flex-column"
            style="min-height: 100dvh">
         <header class="fixed-top header-primary px-7 py-6 d-flex justify-content-between align-items-center">
   <p class="header-time">9:41</p>
@@ -21,9 +22,8 @@
   </div>
 </header>
         <div class="app__status-bar-space"></div>
-      <!--上一頁-->
-        <div class="pb-3 ps-6 mb-4 align-self-start">
-          <a href="onboarding-info.html" class="btn border-0 p-0">
+        <div class="pb-3 ps-6 mb-4">
+          <a href="onboarding-pair.html" class="btn border-0 p-0">
               <img
                 class="border rounded-circle bg-white arrow-prev-btn"
                 src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.17108%209.3891L7.42091%2014.3388C7.53036%2014.442%207.67881%2014.5%207.8336%2014.5C7.98839%2014.5%208.13684%2014.442%208.2463%2014.3388C8.35575%2014.2356%208.41724%2014.0957%208.41724%2013.9497C8.41724%2013.8038%208.35575%2013.6638%208.2463%2013.5606L3.99175%209.54997H15.4167C15.5714%209.54997%2015.7198%209.49203%2015.8292%209.38889C15.9385%209.28575%2016%209.14586%2016%209C16%208.85414%2015.9385%208.71425%2015.8292%208.61111C15.7198%208.50797%2015.5714%208.45003%2015.4167%208.45003H3.99175L8.2463%204.43938C8.35575%204.33618%208.41724%204.19622%208.41724%204.05028C8.41724%203.90433%208.35575%203.76437%208.2463%203.66117C8.13684%203.55798%207.98839%203.5%207.8336%203.5C7.67881%203.5%207.53036%203.55798%207.42091%203.66117L2.17108%208.6109C2.11684%208.66197%202.07382%208.72263%202.04446%208.78939C2.01511%208.85616%202%208.92772%202%209C2%209.07227%202.01511%209.14384%202.04446%209.21061C2.07382%209.27737%202.11684%209.33803%202.17108%209.3891Z'%20fill='%23121212'/%3e%3c/svg%3e"
@@ -31,35 +31,102 @@
               />
           </a>
         </div>
-      <!--同心圓動畫-->
-        <main class="circle-pulse-container pt-4 pb-6 overflow-x-hidden">
-          <div class="circle-pulse circle-pulse1 bg-primary-300"></div>
-          <div class="circle-pulse circle-pulse2 bg-primary-400"></div>
-          <div class="circle-pulse circle-pulse3 bg-primary-600"></div>
-          <div class="circle-pulse circle-pulse4 bg-primary-800"></div>
 
-          <div
-            class="text-neutral-950 text-center position-absolute top-0 start-50 translate-middle-x pt-4 pb-9"
-          >
-            <h3 class="mb-4">配對您的體脂機</h3>
-            <p>打開藍牙，點選</p>
-            <p style="white-space: nowrap">Coach Potato Max3 進行配對</p>
-          </div>
-
-          <div
-            class="position-absolute z-1 top-50 start-50 translate-middle"
-            style="width: 290px; height: 290px"
-          >
-            <img
-              src="/self-aapd/assets/body_fat_scale@3x-C_w-ebM8.png"
-              alt="body＿fat＿scale"
-              class="w-100"
-            />
+        <main class="data-container pt-4 pb-99">
+          <h3 class="text-center mb-8">您的測量結果2</h3>
+          <div class="data-row flex-wrap gap-4">
+            <div class="data-col-6 bg-white rounded-12">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="fw-medium">體重</p>
+                <span class="fw-medium data-high-orange fs-8">
+                  <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                  偏高
+                </span>
+              </div>
+              <p class="h2">
+                57.4<span class="fs-7 fw-medium align-bottom ms-3">Kg</span>
+              </p>
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="fw-medium">BMI</p>
+                <span class="fw-medium data-high-orange fs-8">
+                  <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                  偏高
+                </span>
+              </div>
+              <p class="h2">
+                32<span class="fs-7 fw-medium align-bottom ms-3">%</span>
+              </p>
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="fw-medium">體脂肪率</p>
+                <span class="fw-medium data-high-orange fs-8">
+                  <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                  偏高
+                </span>
+              </div>
+              <p class="h2">
+                32<span class="fs-7 fw-medium align-bottom ms-3">%</span>
+              </p>
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="fw-medium">內臟脂肪</p>
+                <span class="fw-medium data-high-orange fs-8">
+                  <i class="ph ph-smiley-sad fs-3 align-bottom"></i>
+                  偏高
+                </span>
+              </div>
+              <p class="h2">6</p>
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="fw-medium">基礎代謝</p>
+                <span class="fw-medium data-normal-green fs-8">
+                  <i class="ph ph-smiley fs-3 align-bottom"></i>
+                  標準
+                </span>
+              </div>
+              <p class="h2">
+                1285<span class="fs-7 fw-medium align-bottom ms-3">Kcal</span>
+              </p>
+            </div>
+            <div class="data-col-6 bg-white rounded-12">
+              <p class="fw-medium mb-2">身體年齡</p>
+              <p class="h2">35</p>
+            </div>
           </div>
         </main>
+        
+        <footer class="px-4 pt-1 pb-7 mt-auto bg-primary-base w-100 bottom-safe-area">
+          <div class="d-flex flex-column align-items-center">
+            <div
+              class="chat-bubble chat-left chat-shadow bg-white rounded-12 mx-auto"
+            >
+              <p class="fs-7 text-neutral-700" style="line-height: 1.4">
+                讓我來和您說說～您的健康狀況吧！
+              </p>
+            </div>
+            <img
+              src="/self-aapd/assets/CoachPotato_go@2x-PPQSo_lk.png"
+              alt="CoachPotato_go"
+              class="chat-coach z-0"
+            />
+          </div>
 
-        <footer class="px-4 pt-4 pb-7 mt-auto bg-primary-base w-100">
-          <a href="onboarding-measure.html">
+          <a href="onboarding-goal-select.html">
             <div
               class="footer-btn rounded-pill w-100 py-4 animate__animated animate__fadeIn animate__delay-2s"
             >
@@ -69,5 +136,6 @@
         </footer>
       </div>
     </div>
+
   </body>
 </html>
